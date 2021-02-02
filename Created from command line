@@ -1,0 +1,258 @@
+Last login: Tue Feb  2 07:58:52 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) Maxs-MacBook-Pro-3:~ mxp893$ ls
+1			Movies			bash.profile
+Applications		Music			eclipse-workspace
+Desktop			Pictures		gitProjects
+Documents		Public			home
+Downloads		Untitled.ipynb		opt
+Lecture 2.ipynb		Untitled1.ipynb		oraInventory
+Library			VirtualBox VMs
+(base) Maxs-MacBook-Pro-3:~ mxp893$ git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+(base) Maxs-MacBook-Pro-3:~ mxp893$ git version
+git version 2.24.3 (Apple Git-128)
+(base) Maxs-MacBook-Pro-3:~ mxp893$ cd Desktop
+(base) Maxs-MacBook-Pro-3:Desktop mxp893$ cd Desktop
+-bash: cd: Desktop: No such file or directory
+(base) Maxs-MacBook-Pro-3:Desktop mxp893$ mkdir P1
+(base) Maxs-MacBook-Pro-3:Desktop mxp893$ init
+-bash: init: command not found
+(base) Maxs-MacBook-Pro-3:Desktop mxp893$ cd P1
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git init
+Initialized empty Git repository in /Users/mxp893/Desktop/P1/.git/
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ cd P1
+-bash: cd: P1: No such file or directory
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ ls
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ ls-a
+-bash: ls-a: command not found
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ ls -a
+.	..	.git
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ mate README.md
+-bash: mate: command not found
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git init
+Reinitialized existing Git repository in /Users/mxp893/Desktop/P1/.git/
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git add README.md
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   README.md
+
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git commit -m
+error: switch `m' requires a value
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git commit -m "initial commit"
+[master (root-commit) 1e5d119] initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git status
+On branch master
+nothing to commit, working tree clean
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ mate README.md
+-bash: mate: command not found
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ ls
+README.md
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ -mate README.md
+-bash: -mate: command not found
+(base) Maxs-MacBook-Pro-3:P1 mxp893$  README.md
+-bash: README.md: command not found
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ -mate README.md
+-bash: -mate: command not found
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ mate README.md
+-bash: mate: command not found
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ README.md
+-bash: README.md: command not found
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ R1
+-bash: R1: command not found
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ open R1
+The file /Users/mxp893/Desktop/P1/R1 does not exist.
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ open R1.txt
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	R1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git add R1.txt
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   R1.txt
+
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git commit -m "Textfile instead of Mate"
+[master 9cfe77d] Textfile instead of Mate
+ 1 file changed, 7 insertions(+)
+ create mode 100644 R1.txt
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git status
+On branch master
+nothing to commit, working tree clean
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   R1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git add R1.txt
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   R1.txt
+
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git commit -m "Textfile changed"
+[master 685b7c4] Textfile changed
+ 1 file changed, 3 insertions(+)
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git status
+On branch master
+nothing to commit, working tree clean
+(base) Maxs-MacBook-Pro-3:P1 mxp893$  git status
+On branch master
+nothing to commit, working tree clean
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ textEdit index.html
+-bash: textEdit: command not found
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ textEdit index.html
+-bash: textEdit: command not found
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ index.html
+-bash: index.html: command not found
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ TextMate
+-bash: TextMate: command not found
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git add index.html
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   index.html
+
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git commit -m "index.html"
+[master 5ba2523] index.html
+ 1 file changed, 59 insertions(+)
+ create mode 100644 index.html
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ git status
+On branch master
+nothing to commit, working tree clean
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ index.html
+-bash: index.html: command not found
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ open index.html
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ create test.txt
+-bash: create: command not found
+(base) Maxs-MacBook-Pro-3:P1 mxp893$ vi test.txt
+
+Text file created in command line
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+~                                                                                                     
+-- INSERT --
